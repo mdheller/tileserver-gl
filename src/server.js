@@ -379,7 +379,7 @@ function start(opts) {
     return wmts;
   });
 
-  serveTemplate('/data/:id/$', 'data', function(req) {
+  serveTemplate('/data_page/:id/$', 'data', function(req) {
     var id = req.params.id;
     var data = clone(serving.data[id]);
     if (!data) {
